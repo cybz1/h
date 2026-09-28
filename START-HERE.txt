@@ -1,0 +1,40 @@
+H + M BIRTHDAY WEBSITE
+
+This ZIP contains the complete editable website and all its artwork.
+Extract the ZIP before opening the files.
+
+RUN ON WINDOWS
+1. Install Node.js 22.13 or newer if it is not already installed.
+2. Double-click START-WEBSITE.cmd inside the extracted folder.
+3. Once the server is ready open http://localhost:5173 in your browser.
+4. Keep the command window open while using the website.
+
+RUN ON MAC OR LINUX
+With Node.js 22.13 or newer installed open a terminal in this folder:
+  npm install
+  BIRTHDAY_PIN=04271005 npm run dev
+Then open http://localhost:5173
+
+PIN: 04271005
+Birthday: 5 October
+
+The website uses a small server for the PIN and letter so it is not a
+single HTML file that opens by double-clicking. Dependencies download
+on the first run. They are excluded from this ZIP to keep it small.
+
+EDITING
+Letter: app/api/letter/route.ts
+Page: app/page.tsx
+Colours and layout: app/globals.css
+Images and font: public/
+
+The birthday button shows the early-click message on days other than
+5 October. Its actual birthday surprise is still to be created. The invitation choices and meeting time stay on the page and are not sent anywhere. The deposit is only a joke and no payment is collected.
+
+IDEAS FOR LATER
+- a voice note that unlocks on her birthday
+- a tiny photo scrapbook with captions written by you
+- clickable kittens hiding short messages
+- a pixel cake with candles she can blow out
+
+This is a local website package and is not a published public link.
